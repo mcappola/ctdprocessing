@@ -1,8 +1,14 @@
 # ctdprocessing
 Batch scripts to automate CTD processing with SBE Data Processing software
 
+Current PSA scripts support the SBE911plus with a dual sensor suite, a par sensor, and a transmissometer.
+Current PSA scripts are best for polar water (Long time alignment on the O2 sensor).
 
-## CTD Batch Processing in CMD
+**TO DO:** 
+- Create a generic set of PSA scripts that will always work, no matter what the sensor set up is.
+- Make all of the PSA file names the generic names from SBE so users can easily use their own.
+
+### CTD Batch Processing in CMD
 Michael Cappola (mcappola@udel.edu)
 
 ### SUMMARY
