@@ -26,5 +26,5 @@ If using this tool to process another cruise, just place the raw files in the ra
 
 If process module settings should be changed, edit the ".psa" files in the "processingscripts" directory using the SBEDataProcessing software that was downloaded within the SeatermV2 package. If processing an entire cruise, recommend running one cast first and checking the header to make sure you agree with the ".psa" inputs. 
 
-**All other scripts in the "processingscripts" directory are called by WinprocessAll or Winprocess, and should not be removed.
-**----------
+All other scripts in the "processingscripts" directory are called by WinprocessAll or Winprocess, and should not be removed.
+
