@@ -27,7 +27,7 @@ Michael Cappola (mcappola@udel.edu)
 - Download the "ctdprocessing" directory. Current version requires that the directory structure is preserved.
 
 ### DIRECTIONS FOR USE
-- Put raw files into the raw directory. This is any files generated from the deck unit.
+- Put raw files into the raw directory. This is any file generated from the deck unit.
 - To process a single cast, double click "Winprocess.bat" and input the cast's filename. This can be done from the terminal.
 - To process multiple casts, double click the "WinprocessAll.bat", or run from the terminal. A cruise with about 50 casts can take upto 30 minutes to process if the casts were deep (>1000m).
 
