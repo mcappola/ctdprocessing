@@ -24,7 +24,7 @@ Michael Cappola (mcappola@udel.edu)
 
 ### DIRECTIONS FOR INSTALL
 - Install required seabird software.
-- Download the "ctdprocessing" directory. Current version requires that the directory structure is preserved.
+- Download the "ctdprocessing" directory. Current version requires that the directory structure is preserved so cloning the repo is best.
 
 ### DIRECTIONS FOR USE
 - Put raw files into the raw directory. This is any file generated from the deck unit.
@@ -38,5 +38,5 @@ If process module settings should be changed, edit the ".psa" files in the "proc
 
 All other scripts in the "processingscripts" directory are called by WinprocessAll or Winprocess, and should not be removed.
 
-If this is being used for insitu processing at sea, recommend installing it at the CTD work station. Then you can have the deckunit output the files directly into the raw directory. 
+If this is being used for insitu processing at sea, recommend installing it at the CTD work station. Then you can have the deckunit output the files directly into the raw directory, simplifying the workflow.
 
