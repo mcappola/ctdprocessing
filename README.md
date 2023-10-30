@@ -9,7 +9,8 @@ Batch scripts to automate CTD processing with SBE Data Processing software
 **TO DO:** 
 - Create a generic set of PSA scripts that will always work, no matter what the sensor set up is.
 - Create a set of PSA scripts for troubleshooting the soak, the pump, dual sensors, ect.
-- Make all of the PSA file names the generic names from SBE so users can easily use their own.
+- Make the batch utilities accept the batch file as an input.
+- Create multiple batchfiles to support different processing schemes.
 
 ### CTD Batch Processing in CMD
 Michael Cappola (mcappola@udel.edu)
@@ -24,12 +25,12 @@ Michael Cappola (mcappola@udel.edu)
 
 ### DIRECTIONS FOR INSTALL
 - Install required seabird software.
-- Download the "ctdprocessing" directory. Current version requires that the directory structure is preserved so cloning the repo is best.
+- Clone the "ctdprocessing" directory to where you intend to process files from the deck unit.
 
 ### DIRECTIONS FOR USE
 - Put raw files into the raw directory. This is any file generated from the deck unit.
 - To process a single cast, double click "Winprocess.bat" and input the cast's filename. This can be done from the terminal.
-- To process multiple casts, double click the "WinprocessAll.bat", or run from the terminal. A cruise with about 50 casts can take upto 30 minutes to process if the casts were deep (>1000m).
+- To process multiple casts, double click the "WinprocessAll.bat", or run from the terminal. This will process all files in the raw directory.
 
 ### NOTES
 Scripts use relative pathing, so this tool can be stored anywhere in your PC, but the directory structure must be preserved. Keep "process", "processingscripts", and "raw", in the same main directory. WinprocessAll must be run from the "processingscripts" directory. Directory names must not change.
