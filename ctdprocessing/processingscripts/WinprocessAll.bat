@@ -1,7 +1,7 @@
 :: ~CTD Batch Processing in CMD~
 :: Michael Cappola (mcappola@udel.edu)
 :: Created on: 05/02/2022
-:: Last edit: 07/12/2023
+:: Last edit: 11/01/2023
 
 :: Winprocessall.bat calls winprocessloop.bat for each .hex file in the raw directory. 
 :: Script uses relative pathing. The current directory structure must be preserved.
@@ -11,25 +11,27 @@
 :: Scriptsdir are where the .psa files are. If processing modifications are desired, modify these.
 
 :: 07/12/2023 Removed SV calculation path. Not needed.
+:: 11/01/2023 Cleaned up for publishing.
 
 @echo off
 
+:: Set up directory variables for relative pathing.
 cd..
 set "curdir=%cd%"
-
 set "rawdir=%curdir%\raw"
 set "processdir=%curdir%\process"
 set "scriptdir=%curdir%\processingscripts"
-
 cd processingscripts
 
+:: Delete all files in the process directory. If processing an entire cruise, we want a clean batch run.
 setlocal
-:PROMPT
+
 SET /P AREYOUSURE=PROCEEDING WILL OVERWRITE %processdir%. PROCEED PROCESSING (Y/[N])?
 IF /I "%AREYOUSURE%" NEQ "Y" echo CTD PROCESSING ABORTED & GOTO END 
 
 del /Q %processdir%\*.*
 
+:: Apply WinprocessLoop.bat to each hex file in the raw directory.
 Setlocal EnableDelayedExpansion
 for %%F in ("%rawdir%\*.hex") do (
     set file=%%~nF
