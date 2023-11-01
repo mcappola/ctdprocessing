@@ -27,6 +27,7 @@ Michael Cappola (mcappola@udel.edu)
 ### DIRECTIONS FOR INSTALL
 - Install required seabird software.
 - Clone the "ctdprocessing" directory to where you intend to process files from the deck unit.
+- Process the example cast in the raw directory to ensure everything is setup properly.
 
 ### DIRECTIONS FOR USE
 - Put raw files into the raw directory. These are any files generated from the deck unit.
