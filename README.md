@@ -1,5 +1,5 @@
 # ctdprocessing
-Batch scripts to automate CTD processing with SBE Data Processing software
+Batch scripts to automate and standardize CTD processing with SBE Data Processing software
 
 - Current PSA scripts support the SBE911plus with a dual sensor suite, a par sensor, and a transmissometer.
 - Current PSA scripts are best for polar water (Long time alignment on the O2 sensor).
@@ -9,7 +9,6 @@ Batch scripts to automate CTD processing with SBE Data Processing software
 **TO DO:** 
 - Create a generic set of PSA scripts that will always work, no matter what the sensor set up is.
 - Create a set of PSA scripts for troubleshooting the soak, the pump, dual sensors, ect.
-- Make the batch utilities accept the batch file as an input. DONE for winprocess.bat.
 - Create multiple batchfiles to support different processing schemes.
 
 ### CTD Batch Processing in CMD
@@ -18,6 +17,7 @@ Michael Cappola (mcappola@udel.edu)
 ### SUMMARY
 - WinprocessAll batch script will run the entire processing routine, for all files in the raw directory.
 - Winprocess batch script will run process one CTD based on user input.
+- Both tools now support user batchfiles to support other processing schemes.
 
 ### REQUIREMENTS
 - Must use a Windows OS.
@@ -28,16 +28,21 @@ Michael Cappola (mcappola@udel.edu)
 - Clone the "ctdprocessing" directory to where you intend to process files from the deck unit.
 
 ### DIRECTIONS FOR USE
-- Put raw files into the raw directory. This is any file generated from the deck unit.
-- To process a single cast, double click "Winprocess.bat" and input the cast's filename. This can be done from the terminal.
-- To process multiple casts, double click the "WinprocessAll.bat", or run from the terminal. This will process all files in the raw directory.
+- Put raw files into the raw directory. These are any files generated from the deck unit.
+
+**To Process a Single Cast**
+- Run "Winprocess BatchTextFileName_NoExtension, and enter the individual filename when prompted.
+- To skip the automatic bottlefile processing, Run "Winprocess BatchTextFileName_NoExtension -nb", and enter the individual filename when prompted.
+
+**To Process Multiple Casts**
+- Run "WinprocessAll BatchTextFileName_NoExtension". This will process every cast in the raw directory.
+- To skip the automatic bottlefile processing, Run "WinprocessAll BatchTextFileName_NoExtension -nb", and enter the individual filename when prompted.
+
+### This Tool Supports Your Batch Files!
+- If you already have batch files and psa files associated with a specific processing routine, you can still use this tool. Simply add your psa files to the processingscripts directory, and then generate a batchfile that calls those specific psa files using the same relative pathing scheme. Recommend using batch.txt as a guide, as this processing scheme is the standard approach. If you generate a processing routine that works with this tool and you want to add it to the repository, feel free to contact me.
 
 ### NOTES
-Scripts use relative pathing, so this tool can be stored anywhere in your PC, but the directory structure must be preserved. Keep "process", "processingscripts", and "raw", in the same main directory. WinprocessAll must be run from the "processingscripts" directory. Directory names must not change.
-
-If process module settings should be changed, edit the ".psa" files in the "processingscripts" directory using the SBEDataProcessing software that was downloaded within the SeatermV2 package. If processing an entire cruise, recommend running one cast first and checking the header to make sure you agree with the ".psa" inputs. 
-
-All other scripts in the "processingscripts" directory are called by WinprocessAll or Winprocess, and should not be removed.
+Scripts use relative pathing, so this tool can be stored anywhere in your PC, but the directory structure must be preserved. Scripts must be run from the "processingscripts" directory. Directory names must not change.
 
 If this is being used for insitu processing at sea, recommend installing it at the CTD work station. Then you can have the deckunit output the files directly into the raw directory, simplifying the workflow.
 
