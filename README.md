@@ -15,9 +15,10 @@ Batch scripts to automate and standardize CTD processing with SBE Data Processin
 Michael Cappola (mcappola@udel.edu)
 
 ### SUMMARY
-- WinprocessAll batch script will run the entire processing routine, for all files in the raw directory.
-- Winprocess batch script will run process one CTD based on user input.
-- Both tools now support user batchfiles to support other processing schemes.
+- WinprocessAll will run the entire processing routine, for all files in the raw directory.
+- Winprocess will run process one CTD based on user input.
+- Both tools now support user batchfiles for other processing schemes.
+- Both tools now support argument -nb for skipping bottle processing.
 
 ### REQUIREMENTS
 - Must use a Windows OS.
