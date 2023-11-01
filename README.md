@@ -21,7 +21,7 @@ Michael Cappola (mcappola@udel.edu)
 - Both tools now support argument -nb for skipping bottle processing.
 
 ### REQUIREMENTS
-- Must use a Windows OS.
+- Must use a Windows OS. All testing was done using Windows 10.
 - Must have SeatermV2 installed. (https://www.seabird.com/software)
 
 ### DIRECTIONS FOR INSTALL
