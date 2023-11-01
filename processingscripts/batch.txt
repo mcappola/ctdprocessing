@@ -9,10 +9,3 @@ loopedit  /i%3\%1.cnv /p%4\loopedit.psa /o%3 /f%1.cnv
 derive  /i%3\%1.cnv /p%4\derive.psa /c%3\%1.xmlcon /o%3 /f%1.cnv
 binavg  /i%3\%1.cnv /p%4\binavg.psa /o%3 /f%1.cnv
 split  /i%3\%1.cnv /p%4\split.psa /o%3 /f%1.cnv
-
-@SeaPlot creates a plot and snaps a JPEG of it and creates a printout to the color printer.
-seaplot /i%3\%1.cnv /o%3 /f%1.jpg /p%4\SeaPlot.psa
-@seaplot /i%3\%1.cnv /o%3 /f%1.jpg /p%4\SeaPlotPrint.psa
-
-seaplot /i%3\%1.cnv /o%3 /a_shallow /f%1.jpg /p%4\SeaPlot_shallow.psa
-@seaplot /i%3\%1.cnv /o%3 /f%1.jpg /p%4\SeaPlotPrint_shallow.psa
