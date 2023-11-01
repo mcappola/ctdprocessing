@@ -9,7 +9,7 @@ Batch scripts to automate CTD processing with SBE Data Processing software
 **TO DO:** 
 - Create a generic set of PSA scripts that will always work, no matter what the sensor set up is.
 - Create a set of PSA scripts for troubleshooting the soak, the pump, dual sensors, ect.
-- Make the batch utilities accept the batch file as an input.
+- Make the batch utilities accept the batch file as an input. DONE for winprocess.bat.
 - Create multiple batchfiles to support different processing schemes.
 
 ### CTD Batch Processing in CMD
