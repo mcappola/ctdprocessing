@@ -42,7 +42,7 @@ if errorlevel 1 set BOTTLES="FALSE"
 if "%2"=="-nb" set BOTTLES="FALSE"
 
 :: Process bottle file if BOTTLE variable is true. 
-:: Bottle processing method does not change from region to , so this can remain a fixed input.
+:: Bottle processing method does not change, so this can remain a fixed input.
 if %BOTTLES%=="TRUE" Call "C:\Program Files (x86)\Sea-Bird\SBEDataProcessing-Win32\SBEBatch.exe" batch_bottle.txt %station% %rawdir% %processdir% %scriptdir%
 
 :END
