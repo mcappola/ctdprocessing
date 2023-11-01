@@ -1,0 +1,3 @@
+@This processes the bottle files.
+datcnv  /i%2\%1.hex  /c%2\%1.xmlcon /p%4\datcnv_ros.psa /o%3 /f%1.ros
+rossum /i%3\%1.ros /c%2\%1.xmlcon /p%4\rossum.psa /o%3 /f%1.btl

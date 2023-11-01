@@ -1,0 +1,24 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = C:\Data\CTD\LMG1701\Raw\LMG1701_004.hdr
+* Software Version Seasave V 7.26.1.8
+* Temperature SN = 4573
+* Conductivity SN = 2065
+* Number of Bytes Per Scan = 37
+* Number of Voltage Words = 4
+* Number of Scans Averaged by the Deck Unit = 1
+* System UpLoad Time = Jan 08 2017 08:17:48
+* NMEA Latitude = 64 55.95 S
+* NMEA Longitude = 064 35.76 W
+* NMEA UTC (Time) = Jan 08 2017  08:18:12
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.1e
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 4800
+* Latitude/Longitude added to scan
+* GPIB address = 0
+* advance primary conductivity  0.073 seconds
+* advance secondary conductivity  0.073 seconds
+* S>
+* System UTC = Jan 08 2017 08:17:48
+*END*
