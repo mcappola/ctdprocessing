@@ -22,7 +22,7 @@ Michael Cappola (mcappola@udel.edu)
 
 ### REQUIREMENTS
 - Must use a Windows OS. All testing was done using Windows 10.
-- Must have SeatermV2 installed. (https://www.seabird.com/software)
+- Must have SeatermV2 installed with default options selected. (https://www.seabird.com/software)
 
 ### DIRECTIONS FOR INSTALL
 - Install required seabird software.
@@ -31,14 +31,21 @@ Michael Cappola (mcappola@udel.edu)
 
 ### DIRECTIONS FOR USE
 - Put raw files into the raw directory. These are any files generated from the deck unit.
+- Navigate to the processingscripts directory.
 
 **To Process a Single Cast**
-- Run "Winprocess BatchTextFileName_NoExtension, and enter the individual filename when prompted.
-- To skip the automatic bottlefile processing, Run "Winprocess BatchTextFileName_NoExtension -nb", and enter the individual filename when prompted.
+- Run winprocess.bat with the batch text filename without extention as the first argument.
+-   Example Command: winprocess batch
+- To skip the automatic bottlefile processing, "-nb" can be passed as the second argument.
+-   Example Command: winprocess batch -nb
+- Enter the individual filename when prompted.
 
 **To Process Multiple Casts**
-- Run "WinprocessAll BatchTextFileName_NoExtension". This will process every cast in the raw directory.
-- To skip the automatic bottlefile processing, Run "WinprocessAll BatchTextFileName_NoExtension -nb", and enter the individual filename when prompted.
+- Run winprocess.bat with the batch text filename without extention as the first argument.
+-   Example Command: winprocessall batch
+- To skip the automatic bottlefile processing, "-nb" can be passed as the second argument.
+-   Example Commnad: winprocessall batch -nb
+- This will process every cast in the raw directory.
 
 ### This Tool Supports Your Batch Files!
 - If you already have batch files and psa files associated with a specific processing routine, you can still use this tool. Simply add your psa files to the processingscripts directory, and then generate a batchfile that calls those specific psa files using the same relative pathing scheme. Recommend using batch.txt as a guide, as this processing scheme is the standard approach. If you generate a processing routine that works with this tool and you want to add it to the repository, feel free to contact me.
