@@ -7,9 +7,8 @@ Batch scripts to automate and standardize CTD processing with SBE Data Processin
 - Used McTaggart et al. 2010 (https://www.go-ship.org/Manual/McTaggart_et_al_CTD.pdf) as a guide for PSA settings. 
 
 **TO DO:** 
-- Create a generic set of PSA scripts that will always work, no matter what the sensor set up is.
 - Create a set of PSA scripts for troubleshooting the soak, the pump, dual sensors, ect.
-- Create multiple batchfiles to support different processing schemes.
+- Add a basic batch routine for dual oxygen sensors
 
 ### CTD Batch Processing in CMD
 Michael Cappola (mcappola@udel.edu)
