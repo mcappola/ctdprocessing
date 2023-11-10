@@ -7,7 +7,7 @@
 datcnv  /i%2\%1.hex  /c%2\%1.xmlcon  /o%3 /p%4\datcnv_db.psa  /f%1.cnv
 alignctd  /i%3\%1.cnv /p%4\align_db.psa /o%3 /f%1.cnv
 wildedit  /i%3\%1.cnv /p%4\wildedit_db.psa /o%3 /f%1.cnv
-filter  /i%3\%1.cnv /p%4\filter_db.psa /o%3 /f%1.cnv
+filter  /i%3\%1.cnv /p%4\filter.psa /o%3 /f%1.cnv
 celltm  /i%3\%1.cnv /p%4\celltm.psa /o%3 /f%1.cnv
 loopedit  /i%3\%1.cnv /p%4\loopedit.psa /o%3 /f%1.cnv
 derive  /i%3\%1.cnv /p%4\derive_db.psa /c%3\%1.xmlcon /o%3 /f%1.cnv
