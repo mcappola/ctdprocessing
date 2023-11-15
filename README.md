@@ -46,7 +46,7 @@ Michael Cappola (mcappola@udel.edu)
 -   Example Commnad: winprocessall batch -nb
 - This will process every cast in the raw directory.
 
-### This Tool Supports Your Batch Files!
+### This Tool Supports Your PSA Files!
 - If you already have batch files and psa files associated with a specific processing routine, you can still use this tool. Simply add your psa files to the processingscripts directory, and then generate a batchfile that calls those specific psa files using the same relative pathing scheme. Recommend using batch.txt as a guide, as this processing scheme is the standard approach. If you generate a processing routine that works with this tool and you want to add it to the repository, feel free to contact me.
 
 ### NOTES
