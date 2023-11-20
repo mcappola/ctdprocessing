@@ -1,14 +1,13 @@
 # ctdprocessing
 Batch scripts to automate and standardize CTD processing with SBE Data Processing software
 
-- Current PSA scripts support the SBE911plus with a dual sensor suite, a par sensor, and a transmissometer.
-- Current PSA scripts are best for polar water (Long time alignment on the O2 sensor).
+- Currently working on multple batch files to support different processing routines. Be sure to check if my settings agree with your expectations before use. 
   
 - Used McTaggart et al. 2010 (https://www.go-ship.org/Manual/McTaggart_et_al_CTD.pdf) as a guide for PSA settings. 
 
 **TO DO:** 
 - Create a set of PSA scripts for troubleshooting the soak, the pump, dual sensors, ect.
-- Add a basic batch routine for dual oxygen sensors
+- Integrate a logical check to see if the auto advance function on the SBE11 was used. 
 
 ### CTD Batch Processing in CMD
 Michael Cappola (mcappola@udel.edu)
