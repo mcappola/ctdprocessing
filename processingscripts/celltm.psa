@@ -2,13 +2,13 @@
 <Cell_Thermal_Mass >
   <Version value="7.26.7.129" />
   <ServerName value="Cell Thermal Mass" />
-  <InputDir value="C:\Work\CTD\process" />
+  <InputDir value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process" />
   <InputFileArray size="1" GrowBy="-1" >
-    <ArrayItem index="0" value="LMG1901_001.cnv" />
+    <ArrayItem index="0" value="LMG1701_004.cnv" />
   </InputFileArray>
-  <OutputDir value="C:\Work\CTD\process" />
+  <OutputDir value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process" />
   <NameAppend value="" />
-  <OutputFile value="LMG1901_001" />
+  <OutputFile value="LMG1701_004" />
   <LastProcessed value="0" />
   <Primary >
     <Correct value="1" />

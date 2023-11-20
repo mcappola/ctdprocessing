@@ -1,0 +1,15 @@
+
+@ batch_db.txt 	-Dual Sensors, Basic Routine
+@ -This only processes temperature and conductivity, no additional sensors.
+@ -Align assumes that the deck unit did not complete the auto-advance. This will
+@ require a logical check at some point.
+
+datcnv  /i%2\%1.hex  /c%2\%1.xmlcon  /o%3 /p%4\datcnv_do.psa  /f%1.cnv
+alignctd  /i%3\%1.cnv /p%4\align_do.psa /o%3 /f%1.cnv
+wildedit  /i%3\%1.cnv /p%4\wildedit_do.psa /o%3 /f%1.cnv
+filter  /i%3\%1.cnv /p%4\filter.psa /o%3 /f%1.cnv
+celltm  /i%3\%1.cnv /p%4\celltm.psa /o%3 /f%1.cnv
+loopedit  /i%3\%1.cnv /p%4\loopedit.psa /o%3 /f%1.cnv
+derive  /i%3\%1.cnv /p%4\derive_do.psa /c%3\%1.xmlcon /o%3 /f%1.cnv
+binavg  /i%3\%1.cnv /p%4\binavg.psa /o%3 /f%1.cnv
+split  /i%3\%1.cnv /p%4\split.psa /o%3 /f%1.cnv
