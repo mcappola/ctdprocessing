@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Derive >
+  <Version value="7.26.7.129" />
+  <ServerName value="Derive" />
+  <InstrumentPath value="C:\Work\LTER\Cruise\LMG2401\Code\rothera\process\Ev2545.xmlcon" />
+  <InstrumentMatch value="1" />
+  <InputDir value="C:\Work\LTER\Cruise\LMG2401\Code\rothera\process" />
+  <InputFileArray size="1" GrowBy="-1" >
+    <ArrayItem index="0" value="ev2545.cnv" />
+  </InputFileArray>
+  <OutputDir value="C:\Work\LTER\Cruise\LMG2401\Code\rothera\process" />
+  <NameAppend value="" />
+  <OutputFile value="ev2545" />
+  <LastProcessed value="0" />
+  <CalcArray Size="3" >
+    <CalcArrayItem index="0" CalcID="70" >
+      <Calc UnitID="49" Ordinal="0" >
+        <FullName value="Salinity, Practical [PSU]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="1" CalcID="15" >
+      <Calc UnitID="11" Ordinal="0" >
+        <FullName value="Density [density, kg/m^3]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="2" CalcID="74" >
+      <Calc UnitID="33" Ordinal="0" >
+        <FullName value="Sound Velocity [Chen-Millero, m/s]" />
+      </Calc>
+    </CalcArrayItem>
+  </CalcArray>
+  <MiscellaneousDataForCalculations >
+    <Latitude value="0.000000" />
+    <Longitude value="0.000000" />
+    <DescentRateAndAcceleration >
+      <WindowSize value="2.000000" />
+    </DescentRateAndAcceleration>
+    <Oxygen >
+      <WindowSize value="2.000000" />
+      <ApplyHysteresisCorrection value="1" />
+      <ApplyTauCorrection value="1" />
+    </Oxygen>
+    <AverageSoundVelocity >
+      <MinimumPressure value="20.000000" />
+      <MinimumSalinity value="20.000000" />
+      <PressureWindowSize value="20.000000" />
+      <TimeWindowSize value="60.000000" />
+    </AverageSoundVelocity>
+    <PlumeAnomaly >
+      <ThetaB value="0.000000" />
+      <SalinityB value="0.000000" />
+      <ThetaZSalinityZRatio value="0.000000" />
+      <ReferencePressure value="0.000000" />
+    </PlumeAnomaly>
+    <PotentialTempAnomaly >
+      <A0 value="0.000000" />
+      <A1 value="0.000000" />
+      <A1Multiplier value="0" />
+    </PotentialTempAnomaly>
+  </MiscellaneousDataForCalculations>
+</Derive>
