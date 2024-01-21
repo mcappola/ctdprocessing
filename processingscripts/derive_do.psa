@@ -12,7 +12,7 @@
   <NameAppend value="" />
   <OutputFile value="LMG1701_004" />
   <LastProcessed value="0" />
-  <CalcArray Size="4" >
+  <CalcArray Size="6" >
     <CalcArrayItem index="0" CalcID="70" >
       <Calc UnitID="49" Ordinal="0" >
         <FullName value="Salinity, Practical [PSU]" />
@@ -31,6 +31,16 @@
     <CalcArrayItem index="3" CalcID="15" >
       <Calc UnitID="11" Ordinal="1" >
         <FullName value="Density, 2 [density, kg/m^3]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="4" CalcID="74" >
+      <Calc UnitID="33" Ordinal="0" >
+        <FullName value="Sound Velocity [Chen-Millero, m/s]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="5" CalcID="74" >
+      <Calc UnitID="33" Ordinal="1" >
+        <FullName value="Sound Velocity, 2 [Chen-Millero, m/s]" />
       </Calc>
     </CalcArrayItem>
   </CalcArray>

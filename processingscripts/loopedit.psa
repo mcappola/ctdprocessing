@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Loop_Edit >
-  <Version value="7.26.7.118" />
+  <Version value="7.26.7.129" />
   <ServerName value="Loop Edit" />
-  <InputDir value="C:\Work\CTD\process" />
-  <InputFileArray size="0" GrowBy="-1" />
-  <OutputDir value="C:\Work\CTD\process" />
+  <InputDir value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process" />
+  <InputFileArray size="1" GrowBy="-1" >
+    <ArrayItem index="0" value="LMG1701_004.cnv" />
+  </InputFileArray>
+  <OutputDir value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process" />
   <NameAppend value="" />
-  <OutputFile value="" />
+  <OutputFile value="LMG1701_004" />
   <LastProcessed value="0" />
   <MinVelocityType value="0" high="1" low="0" initialValue="0" />
   <MinCTD_Velocity value="0.250000" />
