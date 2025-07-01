@@ -1,2 +1,0 @@
-
-datcnv  /i%2\%1.hex  /c%2\%1.xmlcon  /o%3 /p%4\datcnv.psa  /f%1.cnv
