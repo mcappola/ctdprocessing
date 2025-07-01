@@ -6,7 +6,7 @@ Batch scripts to automate and standardize CTD processing with SBE Data Processin
  ------
 
 ### SUMMARY
-This software package is a collection of batch scripts and prebuilt Sea-Bird PSA files to facilitate easy CTD processing, both at sea and in the lab. Batch scripts are written with at-sea technicians in mind and shouldn't require any manipulation from the CTD console. PSA files are programmed to process data in the correct order and use the correct settings for science quality output.
+This software package is a collection of batch scripts and prebuilt Sea-Bird PSA files to facilitate easy CTD processing, both at sea and in the lab. Batch scripts are written with at-sea technicians in mind and shouldn't require any manipulation from the CTD console. PSA files are programmed to process data in the correct order and use the correct settings for science quality output. Packages supports bulk processing of multiple casts.
 
 ### REQUIREMENTS
 - Windows OS. All testing was done using Windows 10.
