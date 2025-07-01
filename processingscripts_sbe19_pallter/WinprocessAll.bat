@@ -1,7 +1,7 @@
 :: ~CTD Batch Processing in CMD~
 :: Michael Cappola (mcappola@udel.edu)
 :: Created on: 05/02/2022
-:: Last edit: 11/01/2023
+:: Last edit: 07/01/2025
 
 :: Winprocessall.bat calls winprocessloop.bat for each .hex file in the raw directory. 
 :: Script uses relative pathing. The current directory structure must be preserved.
@@ -14,17 +14,17 @@
 :: 11/01/2023 Cleaned up for publishing.
 :: 11/01/2023 Updated parameters to winprocessloop. %1 is the batch file (from user input) %2 is the file (from loop)
 :: 11/01/2023 Added support for second argument argument -nb, which skips automatic bottle processing.
+:: 07/01/2025 Removed specific batchfile behavior. Now processing paths are separated by directory.
 
 @echo off
 
 :: Set up directory variables for relative pathing.
+set "scriptdir=%cd%"
 cd..
 set "curdir=%cd%"
 set "rawdir=%curdir%\raw"
 set "processdir=%curdir%\process"
-set "scriptdir=%curdir%\processingscripts"
-cd processingscripts
-
+cd %scriptdir%
 setlocal
 
 :: Delete all files in the process directory. If processing an entire cruise, we want a clean batch run.
@@ -33,15 +33,12 @@ IF /I "%AREYOUSURE%" NEQ "Y" echo CTD PROCESSING ABORTED & GOTO END
 
 del /Q %processdir%\*.*
 
-:: Set batch program from user input.
-set BATCHFILE="%1.txt"
-
 :: Apply WinprocessLoop.bat to each hex file in the raw directory.
-:: %2 is the optional -nb argument. We pass this to winprocessloop.bat.
+:: %1 is the optional -nb argument. We pass this to winprocessloop.bat.
 Setlocal EnableDelayedExpansion
 for %%F in ("%rawdir%\*.hex") do (
     set file=%%~nF
-    call winprocessloop.bat %BATCHFILE% !file! %2
+    call winprocessloop.bat batch.txt !file! %1
 )
 
 :END
