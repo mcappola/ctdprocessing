@@ -1,13 +1,7 @@
-CTD Batch Processing in CMD
+These PSA and batch files are set up for use with the Palmer LTER Program. 
+
+They assume use with a pumped SBE19plus with additional sensors:
+- WET Labs ECO-AFL/FL fluorescence sensor
+- WET Labs C-Star beam transmission sensor
+
 Michael Cappola (mcappola@udel.edu)
-
-Currently working on how different batchfiles are used; be sure to check if my current settings match your expectations before use. 
-My naming convention is a mess at the moment. I recommend 
-
-batch.txt - Complete processing routine for polar water on a SBE911 plus, dual sensor suite, transmissometer, and PAR. 
-batch_bottle.txt - Matched with to batch.txt, but for bottle files. 
-batch_db.txt - Dual Basic. Processes temperature, conductivity. Calculates salinity and denisity. Should theoretically work on any SBE911 setup.
-batch_do.txt - Dual Oxygen. Processes temperature, conductivity, and oxygen. Calculates salinity and denisity. Should theoretically work on any SBE911 setup with oxygen sensors. Assumes non-polar water.
-SBE19plus.txt - Processes the SBE19plus with temperature, conductivity, oxygen, transmissometer, fluorometer, and PAR.
-
-batch_datcnv.txt - Only calls datcnv. Use for troubleshooting.

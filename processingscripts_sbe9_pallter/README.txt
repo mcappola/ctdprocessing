@@ -1,11 +1,11 @@
 These PSA and batch files are set up for use with the Palmer LTER Program. 
 
-They assume use with a dual SBE9 with additional sensors:
-- dual SBE43 oxygen sensors
-- WET Labs ECO-AFL/FL fluorescence sensor
-- WET Labs C-Star beam transmission sensor
-- Biospherical/Licor PAR/irradiance sensor
+They assume use with a dual SBE9plus with additional sensors:
+- Dual SBE43 Oxygen Sensors
+- WET Labs ECO-AFL/FL Fluorescence Sensor
+- WET Labs C-Star Beam Transmission Sensor
+- Biospherical/Licor PAR/Irradiance Sensor
 
-PSA settings are set up for use with polar water.
+PSA settings are set up for use with polar water. This affects the oxygen sensor.
 
 Michael Cappola (mcappola@udel.edu)

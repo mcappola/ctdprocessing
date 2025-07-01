@@ -1,55 +1,52 @@
-# ctdprocessing
-Batch scripts to automate and standardize CTD processing with SBE Data Processing software
+# ctdprocessing v2.0
+Batch scripts to automate and standardize CTD processing with SBE Data Processing software. Simple CTD batch processing with a single click.
 
-- Currently working on multple batch files to support different processing routines. Be sure to check if my settings agree with your expectations before use. 
-  
-- Used McTaggart et al. 2010 (https://www.go-ship.org/Manual/McTaggart_et_al_CTD.pdf) as a guide for PSA settings. 
+ Michael Cappola (mcappola@udel.edu)
 
-**TO DO:** 
-- Create a set of PSA scripts for troubleshooting the soak, the pump, dual sensors, ect.
-- Integrate a logical check to see if the auto advance function on the SBE11 was used. 
-
-### CTD Batch Processing in CMD
-Michael Cappola (mcappola@udel.edu)
+ ------
 
 ### SUMMARY
-- WinprocessAll will run the entire processing routine, for all files in the raw directory.
-- Winprocess will run process one CTD based on user input.
-- Both tools now support user batchfiles for other processing schemes.
-- Both tools now support argument -nb for skipping bottle processing.
+This software package is a collection of batch scripts and prebuilt Sea-Bird PSA files to facilitate easy CTD processing, both at sea and in the lab. Batch scripts are written with at-sea technicians in mind and shouldn't require any manipulation from the CTD console. PSA files are programmed to process data in the correct order and use the correct settings for science quality output.
 
 ### REQUIREMENTS
-- Must use a Windows OS. All testing was done using Windows 10.
-- Must have SeatermV2 installed with default options selected. (https://www.seabird.com/software)
-
-### DIRECTIONS FOR INSTALL
-- Install required seabird software.
-- Clone the "ctdprocessing" directory to where you intend to process files from the deck unit.
-- Process the example cast in the raw directory to ensure everything is setup properly.
+- Windows OS. All testing was done using Windows 10.
+- SeatermV2 installed with default options selected. (https://www.seabird.com/software)
 
 ### DIRECTIONS FOR USE
-- Put raw files into the raw directory. These are any files generated from the deck unit.
-- Navigate to the processingscripts directory.
+- Put CTD hex files into the "raw" directory. These are any files generated from the deck unit.
+- Navigate to the correct processingscripts directory for your CTD and deployment setup.
 
-**To Process a Single Cast**
-- Run winprocess.bat with the batch text filename without extention as the first argument.
--   Example Command: winprocess batch
-- To skip the automatic bottlefile processing, "-nb" can be passed as the second argument.
--   Example Command: winprocess batch -nb
-- Enter the individual filename when prompted.
+* *To Process a Single Cast*:
+    1. Run Winprocess.bat 
+    2. When prompted, type in the file to be processed (no extention)
+    3. Click enter
+    4. Processed files will appear in the "process" directory
 
-**To Process Multiple Casts**
-- Run winprocess.bat with the batch text filename without extention as the first argument.
--   Example Command: winprocessall batch
-- To skip the automatic bottlefile processing, "-nb" can be passed as the second argument.
--   Example Commnad: winprocessall batch -nb
-- This will process every cast in the raw directory.
+    - To skip automatic bottle file processing, pass -nb as the first arguement from the terminal.
+    - To further simplify the processing workflow, a desktop shortcut can be made to the Winprocess.bat file.
+    - If at sea, setting up the deckbox to copy the raw files into the "raw" directory will further simplify the workflow.
 
-### This Tool Supports Your PSA Files!
-- If you already have batch files and psa files associated with a specific processing routine, you can still use this tool. Simply add your psa files to the processingscripts directory, and then generate a batchfile that calls those specific psa files using the same relative pathing scheme. Recommend using batch.txt as a guide, as this processing scheme is the standard approach. If you generate a processing routine that works with this tool and you want to add it to the repository, feel free to contact me.
+* *To Process Multiple Casts*
+    1. Run Winprocessall.bat
+    2. When prompted, accept overwrite warning (if desired).
+    3. Click enter
+    4. Processed files will appear in the "process" directory
+    5. Go get a coffee, this process can take a while. On my computer, 100 casts typically takes about 20 minutes.
 
-### NOTES
-Scripts use relative pathing, so this tool can be stored anywhere in your PC, but the directory structure must be preserved. Scripts must be run from the "processingscripts" directory. Directory names must not change.
+    - To skip automatic bottle file processing, pass -nb as the first arguement from the terminal.
+    - This script is simply looping through all available hex files, so the "raw" directory should contain only profiles intended to be processed.
 
-If this is being used for insitu processing at sea, recommend installing it at the CTD work station. Then you can have the deckunit output the files directly into the raw directory, simplifying the workflow.
+### Current Supported Processing Schemes
+- SBE9plus Dual Sensor with Oxygen, PAR, Beam Transmission, and Flourensence, in polar water.
+- SBE19plus with PAR and Beam Transmission.
+
+
+### This Tool Can Support Your PSA Files!
+- If you already have PSA files associated with a specific processing routine or sensor, you can still use this package. As long as there is a batch.txt and batch_bottle.txt file that correctly references your PSA files, this tool should still handle the automation correctly. If you're interested in working with me on this repo, feel free to reach out or do a pull-request to add your processing routine. I would like to get most common Sea-Bird CTD deployment setups available on here at some point.
+
+### References
+
+https://www.go-ship.org/Manual/McTaggart_et_al_CTD.pdf
+
+https://www.seabird.com/asset-get.download.jsa?id=69833854944
 
