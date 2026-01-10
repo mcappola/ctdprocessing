@@ -13,7 +13,7 @@ This software package is a collection of batch scripts and prebuilt Sea-Bird PSA
 - SeatermV2 installed with default options selected. (https://www.seabird.com/software)
 
 ### DIRECTIONS FOR USE
-- Put CTD hex files into the "raw" directory. These are any files generated from the deck unit.
+- Put CTD hex, xmlcon, and bottle files, into the "raw" directory. These are any files generated from the deck unit.
 - Navigate to the correct processingscripts directory for your CTD and deployment setup.
 
 * *To Process a Single Cast*:
