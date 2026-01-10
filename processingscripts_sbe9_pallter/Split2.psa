@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Split >
+  <Version value="7.26.7.129" />
+  <ServerName value="Split" />
+  <InputDir value="C:\work\ctdprocessing\process" />
+  <InputFileArray size="1" GrowBy="-1" >
+    <ArrayItem index="0" value="fLMG1701_004.cnv" />
+  </InputFileArray>
+  <OutputDir value="C:\work\ctdprocessing\process" />
+  <NameAppend value="" />
+  <OutputFile value="fLMG1701_004" />
+  <LastProcessed value="0" />
+  <OutputFiles value="1" high="1" low="0" initialValue="0" />
+  <ExcludeMarkedBad value="1" />
+</Split>

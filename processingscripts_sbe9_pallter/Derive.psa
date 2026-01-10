@@ -2,35 +2,109 @@
 <Derive >
   <Version value="7.26.7.129" />
   <ServerName value="Derive" />
-  <InstrumentPath value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process\LMG1701_004.xmlcon" />
+  <InstrumentPath value="C:\work\ctdprocessing\process\LMG1701_004.xmlcon" />
   <InstrumentMatch value="1" />
-  <InputDir value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process" />
+  <InputDir value="C:\work\ctdprocessing\process" />
   <InputFileArray size="1" GrowBy="-1" >
-    <ArrayItem index="0" value="LMG1701_004.cnv" />
+    <ArrayItem index="0" value="fLMG1701_004.cnv" />
   </InputFileArray>
-  <OutputDir value="C:\Users\mcappola\Desktop\temp\repos\ctdprocessing\process" />
+  <OutputDir value="C:\work\ctdprocessing\process" />
   <NameAppend value="" />
-  <OutputFile value="LMG1701_004" />
+  <OutputFile value="fLMG1701_004.cnv" />
   <LastProcessed value="0" />
-  <CalcArray Size="4" >
-    <CalcArrayItem index="0" CalcID="70" >
+  <CalcArray Size="16" >
+    <CalcArrayItem index="0" CalcID="62" >
+      <Calc UnitID="6" Ordinal="0" >
+        <FullName value="Potential Temperature [ITS-90, deg C]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="1" CalcID="62" >
+      <Calc UnitID="6" Ordinal="1" >
+        <FullName value="Potential Temperature, 2 [ITS-90, deg C]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="2" CalcID="70" >
       <Calc UnitID="49" Ordinal="0" >
         <FullName value="Salinity, Practical [PSU]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="1" CalcID="70" >
+    <CalcArrayItem index="3" CalcID="70" >
       <Calc UnitID="49" Ordinal="1" >
         <FullName value="Salinity, Practical, 2 [PSU]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="2" CalcID="15" >
+    <CalcArrayItem index="4" CalcID="15" >
       <Calc UnitID="11" Ordinal="0" >
         <FullName value="Density [density, kg/m^3]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="3" CalcID="15" >
+    <CalcArrayItem index="5" CalcID="15" >
       <Calc UnitID="11" Ordinal="1" >
         <FullName value="Density, 2 [density, kg/m^3]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="6" CalcID="15" >
+      <Calc UnitID="53" Ordinal="0" >
+        <FullName value="Density [sigma-theta, kg/m^3]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="7" CalcID="15" >
+      <Calc UnitID="53" Ordinal="1" >
+        <FullName value="Density, 2 [sigma-theta, kg/m^3]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="8" CalcID="55" >
+      <Calc UnitID="40" Ordinal="0" >
+        <FullName value="Oxygen, SBE 43 [ml/l]" />
+        <WindowSize value="2.000000" />
+        <ApplyHysteresisCorrection value="1" />
+        <ApplyTauCorrection value="1" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="9" CalcID="55" >
+      <Calc UnitID="40" Ordinal="1" >
+        <FullName value="Oxygen, SBE 43, 2 [ml/l]" />
+        <WindowSize value="2.000000" />
+        <ApplyHysteresisCorrection value="1" />
+        <ApplyTauCorrection value="1" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="10" CalcID="55" >
+      <Calc UnitID="47" Ordinal="0" >
+        <FullName value="Oxygen, SBE 43 [% saturation]" />
+        <WindowSize value="2.000000" />
+        <ApplyHysteresisCorrection value="1" />
+        <ApplyTauCorrection value="1" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="11" CalcID="55" >
+      <Calc UnitID="47" Ordinal="1" >
+        <FullName value="Oxygen, SBE 43, 2 [% saturation]" />
+        <WindowSize value="2.000000" />
+        <ApplyHysteresisCorrection value="1" />
+        <ApplyTauCorrection value="1" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="12" CalcID="74" >
+      <Calc UnitID="33" Ordinal="0" >
+        <FullName value="Sound Velocity [Chen-Millero, m/s]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="13" CalcID="74" >
+      <Calc UnitID="33" Ordinal="1" >
+        <FullName value="Sound Velocity, 2 [Chen-Millero, m/s]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="14" CalcID="18" >
+      <Calc UnitID="32" Ordinal="0" >
+        <FullName value="Descent Rate [m/s]" />
+        <WindowSize value="2.000000" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="15" CalcID="0" >
+      <Calc UnitID="36" Ordinal="0" >
+        <FullName value="Acceleration [m/s^2]" />
+        <WindowSize value="2.000000" />
       </Calc>
     </CalcArrayItem>
   </CalcArray>

@@ -1,11 +1,23 @@
 
 @McTaggart's Order. This processes both up and downcasts.
+@Datcnv converts the hex files into binary cnv files.
 datcnv  /i%2\%1.hex  /c%2\%1.xmlcon  /o%3 /p%4\datcnv.psa  /f%1.cnv
+
+@Align advances conductivity and oxygen (5s). Align2 only advances oxygen (5s) incase the auto advance option is used from the deck box.
 alignctd  /i%3\%1.cnv /p%4\align.psa /o%3 /f%1.cnv
+@alignctd  /i%3\%1.cnv /p%4\align2.psa /o%3 /f%1.cnv
+
 wildedit  /i%3\%1.cnv /p%4\wildedit.psa /o%3 /f%1.cnv
 filter  /i%3\%1.cnv /p%4\filter.psa /o%3 /f%1.cnv
 celltm  /i%3\%1.cnv /p%4\celltm.psa /o%3 /f%1.cnv
 loopedit  /i%3\%1.cnv /p%4\loopedit.psa /o%3 /f%1.cnv
-derive  /i%3\%1.cnv /p%4\derive.psa /c%3\%1.xmlcon /o%3 /f%1.cnv
-binavg  /i%3\%1.cnv /p%4\binavg.psa /o%3 /f%1.cnv
+derive  /i%3\%1.cnv /p%4\derive.psa /c%3\%1.xmlcon /o%3 /ff%1.cnv
+
+@ This set creates bin averaged up and downcast files
+binavg  /i%3\f%1.cnv /p%4\binavg.psa /o%3 /f%1.cnv
+trans  /i%3\%1.cnv /p%4\trans.psa /o%3 /f%1.cnv
 split  /i%3\%1.cnv /p%4\split.psa /o%3 /f%1.cnv
+
+@ This set creates a full resolution downcast file
+trans  /i%3\f%1.cnv /p%4\trans.psa /o%3 /ff%1.cnv
+split  /i%3\f%1.cnv /p%4\split2.psa /o%3 /ff%1.cnv
