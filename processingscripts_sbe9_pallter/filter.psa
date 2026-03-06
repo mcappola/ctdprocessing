@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Filter >
-  <Version value="7.26.7.129" />
+  <Version value="7.26.7.118" />
   <ServerName value="Filter" />
-  <InputDir value="C:\work\ctdprocessing\process" />
+  <InputDir value="C:\Users\cmoffat\Desktop\RR2601\ctd\process" />
   <InputFileArray size="1" GrowBy="-1" >
-    <ArrayItem index="0" value="lmg1701_004.cnv" />
+    <ArrayItem index="0" value="rr2601_decktest.cnv" />
   </InputFileArray>
-  <OutputDir value="C:\work\ctdprocessing\process" />
+  <OutputDir value="C:\Users\cmoffat\Desktop\RR2601\ctd\process" />
   <NameAppend value="" />
-  <OutputFile value="LMG1701_004.cnv" />
+  <OutputFile value="RR2601_DeckTest.cnv" />
   <LastProcessed value="0" />
   <TimeConstFilterA value="0.000000" />
   <TimeConstFilterB value="0.150000" />
-  <CalcArray Size="15" >
+  <CalcArray Size="14" >
     <CalcArrayItem index="0" CalcID="65" >
       <Calc UnitID="3" Ordinal="0" >
         <FullName value="Pressure, Digiquartz [db]" />
@@ -50,44 +50,38 @@
         <ApplyHysteresisCorrection value="1" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="7" CalcID="57" >
-      <Calc UnitID="63" Ordinal="1" >
-        <FullName value="Oxygen raw, SBE 43, 2 [V]" />
-        <ApplyHysteresisCorrection value="1" />
-      </Calc>
-    </CalcArrayItem>
-    <CalcArrayItem index="8" CalcID="93" >
+    <CalcArrayItem index="7" CalcID="93" >
       <Calc UnitID="38" Ordinal="0" >
         <FullName value="Fluorescence, WET Labs ECO-AFL/FL [mg/m^3]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="9" CalcID="178" >
+    <CalcArrayItem index="8" CalcID="178" >
       <Calc UnitID="24" Ordinal="0" >
         <FullName value="Beam Attenuation, WET Labs C-Star [1/m]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="10" CalcID="179" >
+    <CalcArrayItem index="9" CalcID="179" >
       <Calc UnitID="46" Ordinal="0" >
         <FullName value="Beam Transmission, WET Labs C-Star [%]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="11" CalcID="59" >
+    <CalcArrayItem index="10" CalcID="59" >
       <Calc UnitID="-1" Ordinal="0" >
         <FullName value="PAR/Irradiance, Biospherical/Licor" />
         <PAR_Units value="0" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="12" CalcID="39" >
+    <CalcArrayItem index="11" CalcID="39" >
       <Calc UnitID="4" Ordinal="0" >
         <FullName value="Latitude [deg]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="13" CalcID="40" >
+    <CalcArrayItem index="12" CalcID="40" >
       <Calc UnitID="4" Ordinal="0" >
         <FullName value="Longitude [deg]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="14" CalcID="1" >
+    <CalcArrayItem index="13" CalcID="1" >
       <Calc UnitID="29" Ordinal="0" >
         <FullName value="Altimeter [m]" />
       </Calc>
@@ -108,6 +102,5 @@
     <ArrayItem index="11" value="0" />
     <ArrayItem index="12" value="0" />
     <ArrayItem index="13" value="0" />
-    <ArrayItem index="14" value="0" />
   </FilterTypeArray>
 </Filter>

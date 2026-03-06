@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Derive >
-  <Version value="7.26.7.129" />
+  <Version value="7.26.7.118" />
   <ServerName value="Derive" />
-  <InstrumentPath value="C:\work\ctdprocessing\process\LMG1701_004.xmlcon" />
+  <InstrumentPath value="C:\Users\cmoffat\Desktop\RR2601_Local\ctd\process\RR2601_011.xmlcon" />
   <InstrumentMatch value="1" />
-  <InputDir value="C:\work\ctdprocessing\process" />
+  <InputDir value="C:\Users\cmoffat\Desktop\RR2601_Local\ctd\process" />
   <InputFileArray size="1" GrowBy="-1" >
-    <ArrayItem index="0" value="fLMG1701_004.cnv" />
+    <ArrayItem index="0" value="dfRR2601_005.cnv" />
   </InputFileArray>
-  <OutputDir value="C:\work\ctdprocessing\process" />
+  <OutputDir value="C:\Users\cmoffat\Desktop\RR2601_Local\ctd\process" />
   <NameAppend value="" />
-  <OutputFile value="fLMG1701_004.cnv" />
+  <OutputFile value="dfRR2601_005.cnv" />
   <LastProcessed value="0" />
   <CalcArray Size="16" >
     <CalcArrayItem index="0" CalcID="62" >
@@ -62,24 +62,24 @@
       </Calc>
     </CalcArrayItem>
     <CalcArrayItem index="9" CalcID="55" >
-      <Calc UnitID="40" Ordinal="1" >
-        <FullName value="Oxygen, SBE 43, 2 [ml/l]" />
+      <Calc UnitID="64" Ordinal="0" >
+        <FullName value="Oxygen, SBE 43 [umol/l]" />
         <WindowSize value="2.000000" />
         <ApplyHysteresisCorrection value="1" />
         <ApplyTauCorrection value="1" />
       </Calc>
     </CalcArrayItem>
     <CalcArrayItem index="10" CalcID="55" >
-      <Calc UnitID="47" Ordinal="0" >
-        <FullName value="Oxygen, SBE 43 [% saturation]" />
+      <Calc UnitID="61" Ordinal="0" >
+        <FullName value="Oxygen, SBE 43 [umol/kg]" />
         <WindowSize value="2.000000" />
         <ApplyHysteresisCorrection value="1" />
         <ApplyTauCorrection value="1" />
       </Calc>
     </CalcArrayItem>
     <CalcArrayItem index="11" CalcID="55" >
-      <Calc UnitID="47" Ordinal="1" >
-        <FullName value="Oxygen, SBE 43, 2 [% saturation]" />
+      <Calc UnitID="47" Ordinal="0" >
+        <FullName value="Oxygen, SBE 43 [% saturation]" />
         <WindowSize value="2.000000" />
         <ApplyHysteresisCorrection value="1" />
         <ApplyTauCorrection value="1" />

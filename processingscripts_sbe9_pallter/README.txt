@@ -1,7 +1,7 @@
-These PSA and batch files are set up for use with the Palmer LTER Program. 
+These PSA and batch files are set up for use with the Palmer LTER Program on RR2601
 
 They assume use with a dual SBE9plus with additional sensors:
-- Dual SBE43 Oxygen Sensors
+- Single SBE43 Oxygen Sensors
 - WET Labs ECO-AFL/FL Fluorescence Sensor
 - WET Labs C-Star Beam Transmission Sensor
 - Biospherical/Licor PAR/Irradiance Sensor

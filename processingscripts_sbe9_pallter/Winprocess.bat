@@ -16,6 +16,9 @@
 set /P input=ENTER CTD FILENAME (NO EXTENTION) TO PROCESS: 
 set station=%input%
 
+:: Ship specific! Mirrors RR2601 raw ctd files to computer 
+:: Call pullctd
+
 :: Set up directory variables for relative pathing.
 set "scriptdir=%cd%"
 cd..

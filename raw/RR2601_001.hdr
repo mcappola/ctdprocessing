@@ -1,0 +1,30 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = C:\CTD\RR2601\RR2601_001.hdr
+* Software Version Seasave V 7.26.7.121
+* Temperature SN = 2202
+* Conductivity SN = 3578
+* Number of Bytes Per Scan = 44
+* Number of Voltage Words = 5
+* Number of Scans Averaged by the Deck Unit = 1
+* Append System Time to Every Scan
+* System UpLoad Time = Jan 17 2026 11:10:57
+* NMEA Latitude = 64 56.00 S
+* NMEA Longitude = 064 24.02 W
+* NMEA UTC (Time) = Jan 17 2026  11:10:56
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.2
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 4800
+* surface PAR voltage added to scan
+* A/D offset = 0
+* Latitude/Longitude added to scan
+* GPIB address = 1
+* autorun on power up is disabled
+* S>
+** Ship: R/V Revelle 
+** Station: 
+** Operator: 
+** Depth: 
+* System UTC = Jan 17 2026 11:10:57
+*END*
