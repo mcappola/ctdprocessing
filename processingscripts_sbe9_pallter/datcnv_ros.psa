@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Data_Conversion >
-  <Version value="7.26.7.118" />
+  <Version value="7.26.7.129" />
   <ServerName value="Data Conversion" />
-  <InstrumentPath value="C:\Users\cmoffat\Desktop\RR2601\ctd\raw\RR2601_DECKTEST.XMLCON" />
+  <InstrumentPath value="C:\work\ctdprocessing\raw\RR2601_001.XMLCON" />
   <InstrumentMatch value="1" />
-  <InputDir value="C:\Users\cmoffat\Desktop\RR2601\ctd\raw" />
-  <InputFileArray size="0" GrowBy="-1" />
-  <OutputDir value="C:\Users\cmoffat\Desktop\RR2601\ctd\raw" />
+  <InputDir value="C:\work\ctdprocessing\raw" />
+  <InputFileArray size="1" GrowBy="-1" >
+    <ArrayItem index="0" value="RR2601_001.hex" />
+  </InputFileArray>
+  <OutputDir value="C:\work\ctdprocessing\raw" />
   <NameAppend value="" />
-  <OutputFile value="" />
+  <OutputFile value="RR2601_001" />
   <LastProcessed value="0" />
   <ProcessScansToEnd value="1" />
   <ScansToSkip value="0" />
@@ -22,7 +24,7 @@
   <ScanRangeDuration value="2.000000" />
   <StartTimeOption value="0" />
   <PromptForNoteAndOrStartTime value="0" />
-  <CalcArray Size="16" >
+  <CalcArray Size="18" >
     <CalcArrayItem index="0" CalcID="65" >
       <Calc UnitID="3" Ordinal="0" >
         <FullName value="Pressure, Digiquartz [db]" />
@@ -54,12 +56,10 @@
         <FullName value="Conductivity, 2 [mS/cm]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="6" CalcID="55" >
-      <Calc UnitID="40" Ordinal="0" >
-        <FullName value="Oxygen, SBE 43 [ml/l]" />
-        <WindowSize value="2.000000" />
+    <CalcArrayItem index="6" CalcID="57" >
+      <Calc UnitID="63" Ordinal="0" >
+        <FullName value="Oxygen raw, SBE 43 [V]" />
         <ApplyHysteresisCorrection value="1" />
-        <ApplyTauCorrection value="1" />
       </Calc>
     </CalcArrayItem>
     <CalcArrayItem index="7" CalcID="93" >
@@ -67,45 +67,55 @@
         <FullName value="Fluorescence, WET Labs ECO-AFL/FL [mg/m^3]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="8" CalcID="179" >
+    <CalcArrayItem index="8" CalcID="178" >
+      <Calc UnitID="24" Ordinal="0" >
+        <FullName value="Beam Attenuation, WET Labs C-Star [1/m]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="9" CalcID="179" >
       <Calc UnitID="46" Ordinal="0" >
         <FullName value="Beam Transmission, WET Labs C-Star [%]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="9" CalcID="59" >
+    <CalcArrayItem index="10" CalcID="59" >
       <Calc UnitID="-1" Ordinal="0" >
         <FullName value="PAR/Irradiance, Biospherical/Licor [umol photons/m^2/sec]" />
         <PAR_Units value="1" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="10" CalcID="39" >
+    <CalcArrayItem index="11" CalcID="39" >
       <Calc UnitID="4" Ordinal="0" >
         <FullName value="Latitude [deg]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="11" CalcID="40" >
+    <CalcArrayItem index="12" CalcID="40" >
       <Calc UnitID="4" Ordinal="0" >
         <FullName value="Longitude [deg]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="12" CalcID="84" >
-      <Calc UnitID="27" Ordinal="0" >
-        <FullName value="Julian Days" />
-      </Calc>
-    </CalcArrayItem>
-    <CalcArrayItem index="13" CalcID="1" >
-      <Calc UnitID="29" Ordinal="0" >
-        <FullName value="Altimeter [m]" />
-      </Calc>
-    </CalcArrayItem>
-    <CalcArrayItem index="14" CalcID="84" >
+    <CalcArrayItem index="13" CalcID="84" >
       <Calc UnitID="52" Ordinal="0" >
         <FullName value="Time, Elapsed [seconds]" />
       </Calc>
     </CalcArrayItem>
-    <CalcArrayItem index="15" CalcID="72" >
+    <CalcArrayItem index="14" CalcID="84" >
+      <Calc UnitID="27" Ordinal="0" >
+        <FullName value="Julian Days" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="15" CalcID="1" >
+      <Calc UnitID="29" Ordinal="0" >
+        <FullName value="Altimeter [m]" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="16" CalcID="72" >
       <Calc UnitID="-1" Ordinal="0" >
         <FullName value="Scan Count" />
+      </Calc>
+    </CalcArrayItem>
+    <CalcArrayItem index="17" CalcID="41" >
+      <Calc UnitID="-1" Ordinal="0" >
+        <FullName value="Modulo Error Count" />
       </Calc>
     </CalcArrayItem>
   </CalcArray>

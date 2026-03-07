@@ -329,14 +329,14 @@
 #     </SPAR_Sensor>
 #   </sensor>
 # </Sensors>
-# datcnv_date = Mar 06 2026 15:15:45, 7.26.7.129 [datcnv_vars = 18]
+# datcnv_date = Mar 06 2026 15:50:33, 7.26.7.129 [datcnv_vars = 18]
 # datcnv_in = C:\work\ctdprocessing\raw\rr2601_001.hex C:\work\ctdprocessing\raw\rr2601_001.XMLCON
 # datcnv_skipover = 0
 # datcnv_ox_hysteresis_correction = yes
-# alignctd_date = Mar 06 2026 15:15:49, 7.26.7.129
+# alignctd_date = Mar 06 2026 15:50:36, 7.26.7.129
 # alignctd_in = C:\work\ctdprocessing\process\rr2601_001.cnv
 # alignctd_adv = c0mS/cm 0.073, c1mS/cm 0.073, sbeox0V 5.000                                                                                                                                                                         
-# wildedit_date = Mar 06 2026 15:15:50, 7.26.7.129
+# wildedit_date = Mar 06 2026 15:50:37, 7.26.7.129
 # wildedit_in = C:\work\ctdprocessing\process\rr2601_001.cnv
 # wildedit_pass1_nstd = 2.0
 # wildedit_pass2_nstd = 20.0
@@ -344,28 +344,28 @@
 # wildedit_npoint = 100
 # wildedit_vars = prDM depSM t090C c0mS/cm t190C c1mS/cm sbeox0V flECO-AFL CStarAt0 CStarTr0 par latitude longitude altM
 # wildedit_excl_bad_scans = yes
-# filter_date = Mar 06 2026 15:15:50, 7.26.7.129
+# filter_date = Mar 06 2026 15:50:38, 7.26.7.129
 # filter_in = C:\work\ctdprocessing\process\rr2601_001.cnv
 # filter_low_pass_tc_A = 0.000
 # filter_low_pass_tc_B = 0.150
 # filter_low_pass_A_vars =
 # filter_low_pass_B_vars = prDM
-# celltm_date = Mar 06 2026 15:15:51, 7.26.7.129
+# celltm_date = Mar 06 2026 15:50:39, 7.26.7.129
 # celltm_in = C:\work\ctdprocessing\process\rr2601_001.cnv
 # celltm_alpha = 0.0300, 0.0300
 # celltm_tau = 7.0000, 7.0000
 # celltm_temp_sensor_use_for_cond = primary, secondary
-# loopedit_date = Mar 06 2026 15:15:52, 7.26.7.129
+# loopedit_date = Mar 06 2026 15:50:39, 7.26.7.129
 # loopedit_in = C:\work\ctdprocessing\process\rr2601_001.cnv
 # loopedit_minVelocity = 0.000                                                                                            
 # loopedit_surfaceSoak: minDepth = 5.0, maxDepth = 20, useDeckPress = 1                                                   
 # loopedit_excl_bad_scans = yes
-# Derive_date = Mar 06 2026 15:15:53, 7.26.7.129 [derive_vars = 16]
+# Derive_date = Mar 06 2026 15:50:40, 7.26.7.129 [derive_vars = 16]
 # Derive_in = C:\work\ctdprocessing\process\rr2601_001.cnv C:\work\ctdprocessing\process\rr2601_001.XMLCON
 # derive_time_window_docdt = seconds: 2
 # derive_ox_tau_correction = yes
 # derive_time_window_dzdt = seconds: 2
-# binavg_date = Mar 06 2026 15:15:54, 7.26.7.129
+# binavg_date = Mar 06 2026 15:50:42, 7.26.7.129
 # binavg_in = C:\work\ctdprocessing\process\frr2601_001.cnv
 # binavg_bintype = decibars
 # binavg_binsize = 1
@@ -375,7 +375,7 @@
 # binavg_min_scans_bin = 1
 # binavg_max_scans_bin = 2147483647
 # binavg_surface_bin = no, min = 0.000, max = 0.000, value = 0.000
-# split_date = Mar 06 2026 15:15:59, 7.26.7.129
+# split_date = Mar 06 2026 15:50:47, 7.26.7.129
 # split_in = C:\work\ctdprocessing\process\rr2601_001.cnv
 # split_excl_bad_scans = yes
 # file_type = ascii
