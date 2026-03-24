@@ -258,8 +258,8 @@
 # datcnv_ox_hysteresis_correction = yes
 # datcnv_bottle_scan_range_source = BL file
 # datcnv_scans_per_bottle = 49
-# bottlesum_date = Mar 06 2026 15:50:51, 7.26.7.129
-# bottlesum_in = C:\work\ctdprocessing\process\rr2601_001.ros C:\work\ctdprocessing\raw\RR2601_001.xmlcon
+# bottlesum_date = Mar 24 2026 11:18:51, 7.26.7.129
+# bottlesum_in = C:\work\ctdprocessing\process\RR2601_001.ros C:\work\ctdprocessing\process\RR2601_001.xmlcon
 # bottlesum_ox_tau_correction = yes
     Bottle        Date Potemp090C Potemp190C      Sal00      Sal11  Density00  Density11  Sigma-é00  Sigma-é11 Sbeox0ML/L Sbeox0Mm/L Sbox0Mm/Kg   Sbeox0PS       SvCM      SvCM1       PrDM      DepSM      T090C    C0mS/cm      T190C    C1mS/cm    Sbeox0V  FlECO-AFL   CStarAt0   CStarTr0        Par   Latitude  Longitude      TimeS      TimeJ       AltM       Scan
   Position        Time                                                                                                                                                                                                                                                                                                                                                     
